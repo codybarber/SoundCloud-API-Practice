@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta>
+    <title></title>
+    <script src="angular.js"></script>
+    <script src="https://connect.soundcloud.com/sdk/sdk-3.1.2.js"></script>
+    <script src="soundcloud.js"></script>
+  </head>
+  <body ng-app="myApp" ng-controller="MainController">
+    <ul style="list-style: none;">
+      <li><img src="{{user.avatar_url}}" alt="" /></li>
+      <li><h2>{{user.username}}</h2></li>
+      <li>{{user.description}}</li>
+      <br>
+      <li>Followers: {{user.followers_count}}</li>
+      <li>Hometown: {{user.city}}, {{user.country}}</li>
+      <br>
+      <li><a href="{{user.website}}">{{user.website_title}}</a></li>
+    </ul>
+  </body>
+</html>
