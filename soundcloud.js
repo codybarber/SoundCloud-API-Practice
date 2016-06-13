@@ -8,6 +8,4 @@ app.controller('MainController', function($scope, $http) {
       $scope.user = data;
       console.log(data);
     });
-
-
 });
